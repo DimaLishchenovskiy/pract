@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Резюме</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+        <div id="sidebar"></div>
+            <div id="content"></div>
+            <div style="float:left; width: 43%; height: 60vh;">
+              <div style="height: 85%;">
+                <form class="form" action="" method="post">
+                  <input class="input" type="text" placeholder="Логін">
+                  <input class="input" type="password" placeholder="Пароль">
+                  <input class="input" type="password" placeholder="Повторіть пароль">
+                  Стать:
+                  <input type="radio" value="Чоловік">
+                  <label>Чоловік</label>
+                  <input type="radio" value="Жінка">
+                  <label>Жінка</label>
+                  <br><br>  
+
+                  Вкажіть місто: 
+                  <select name="form_select">
+                    <option value="Київ">Київ</option>
+                    <option value="Рівне">Рівне</option>
+                    <option  selected="selected" value="Крим">Крим</option>
+                  </select>
+                  <br><br>  
+                  Інтереси: 
+                  <label class="container">футбол
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="container">шахи
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="container">малювання  
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="container">музика
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <br><br>
+                  <button class="btn" type="submit">Регистрация</button>
+                  <button class="btn" type="submit" style="  background-color: gray;">Очистити</button>
+                </form>
+              </div>
+              <div id="content" style="margin-left: 1.5%; width: 97%; height: 5vh;"></div>
+            </div>  
+            <div style="float:right; width: 43%; height: 60vh; background-color:blue;"></div> 
+        <div style="float:left; width: 99%; height: 5vh; background-color:yellow;"></div>
+       
+    <!-- <div class="tools">  
+      <!-- <div style= "margin-left: 10%; width:80%; height: 20vh; background-color:blue"></div> -->
+      
+      
+      
+      <!-- <div style= "float: left; margin-left: 10%; width:15%; height: 60vh; background-color:yellow"></div>
+      <div style= "float: left; width:65%; height: 20vh; background-color:yellow"></div>
+      <div style= "float: left; width:65%; height: 40vh">
+          <button onclick="myFunction()">Формула</button>
+      </div>
+      <div style= "float: left; margin-left: 10%; width:80%; height: 20vh; background-color:blue"></div> -->
+
+      </div>
+  </body>
+</html>
+
+<script>
+  function myFunction() {
+    var xyz;
+  for (xyz = 0; xyz < 10; xyz+=1.5) {
+      alert(Math.sqrt(xyz)+Math.sqrt(xyz+Math.sqrt(2*xyz)));
+  }
+  }
+  </script>
